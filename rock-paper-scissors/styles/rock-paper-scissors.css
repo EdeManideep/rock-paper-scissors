@@ -168,4 +168,8 @@ body {
     .body-container{
         width: 90%;
     }
+
+    .logo-container{
+        display: none;
+    }
 }
