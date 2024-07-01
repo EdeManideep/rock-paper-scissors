@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles/rock-paper-scissors.css">
+    <link rel = "website icon" type="png" href="./images/rock.png">
+</head>
+<body>
+    <div class="body-container">
+        <p class="title">Rock Paper Scissors</p>
+        <div class="buttons-container">
+            <button onclick="pickComputerMove('rock')" class="move-button"><img src="./images/rock-emoji.png" class="move-icon"></button>
+            <button onclick="pickComputerMove('paper')" class="move-button"><img src="./images/paper-emoji.png" class="move-icon"></button>
+            <button onclick="pickComputerMove('scissors')" class="move-button"><img src="./images/scissors-emoji.png" class="move-icon"></button>
+        </div>
+        <p class="js-result result"></p>
+        <p class="js-moves"></p>
+        <p class="js-scores scores"></p>
+        <button id="resetScoreButton" class="reset-score-button">Reset Score</button>
+    </div>
+
+    <div class="history-container">
+        <button class="close-button"><img src="./images/delete.png" class="close-icon"></button>
+
+        <div class="history-headings">
+            <div>YOUR MOVE</div>
+            <div>COMPUTER MOVE</div>
+            <div>RESULT</div>
+        </div>
+
+        <div id="history-results"></div>
+    </div>
+
+    <button class="history-button"><img src="./images/history.png" class="history-icon"></button>
+
+    <div class="logo-container">
+        <a href="mailto:manideepede9@gmail.com" target="_blank"><img src="./images/communication.png" class="mail-logo"></a>
+        <a href="https://www.linkedin.com/in/manideepdev/" target="_blank"><img src="./images/linkedin-logo-1.png" class="linkedin-logo"></a>
+        <a href="https://www.instagram.com/_chintu79527_/" target="_blank"><img src="./images/pngwing.com.png" class="insta-logo"></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="./javascript/rock-paper-scissors.js"></script>
+</body>
+</html>
